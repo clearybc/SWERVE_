@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		387FFAFB4D0DF9A01EF83020 /* Pods_RideBC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BCDE24065F81EB47125837 /* Pods_RideBC.framework */; };
+		E72ED7ED208FE929002ACE8F /* RICKY.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E72ED7EC208FE929002ACE8F /* RICKY.mp4 */; };
+		E7858ACF208C11E600F8A144 /* UberAPIResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7858ACE208C11E600F8A144 /* UberAPIResults.swift */; };
+		E7858AD1208C34D100F8A144 /* LyftAPIResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7858AD0208C34D100F8A144 /* LyftAPIResults.swift */; };
 		E795255F208B9E680021A5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E795255E208B9E680021A5AA /* AppDelegate.swift */; };
 		E7952561208B9E680021A5AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7952560208B9E680021A5AA /* ViewController.swift */; };
 		E7952564208B9E680021A5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7952562208B9E680021A5AA /* Main.storyboard */; };
 		E7952567208B9E680021A5AA /* RideBC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7952565208B9E680021A5AA /* RideBC.xcdatamodeld */; };
 		E7952569208B9E690021A5AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7952568208B9E690021A5AA /* Assets.xcassets */; };
 		E795256C208B9E690021A5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E795256A208B9E690021A5AA /* LaunchScreen.storyboard */; };
+		E7CDB734208E535A00BFC57B /* DestinationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CDB733208E535A00BFC57B /* DestinationInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A96C4D760E35BD90E1047094 /* Pods-RideBC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideBC.release.xcconfig"; path = "Pods/Target Support Files/Pods-RideBC/Pods-RideBC.release.xcconfig"; sourceTree = "<group>"; };
+		B6BCDE24065F81EB47125837 /* Pods_RideBC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RideBC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6CE221FEDEEFCDDB8D882C1 /* Pods-RideBC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideBC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RideBC/Pods-RideBC.debug.xcconfig"; sourceTree = "<group>"; };
+		E72ED7EC208FE929002ACE8F /* RICKY.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RICKY.mp4; sourceTree = "<group>"; };
+		E7858ACE208C11E600F8A144 /* UberAPIResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberAPIResults.swift; sourceTree = "<group>"; };
+		E7858AD0208C34D100F8A144 /* LyftAPIResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyftAPIResults.swift; sourceTree = "<group>"; };
 		E795255B208B9E680021A5AA /* RideBC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideBC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E795255E208B9E680021A5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7952560208B9E680021A5AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +35,7 @@
 		E7952568208B9E690021A5AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E795256B208B9E690021A5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E795256D208B9E690021A5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7CDB733208E535A00BFC57B /* DestinationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				387FFAFB4D0DF9A01EF83020 /* Pods_RideBC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		412424EAF86A3AB0F6DE8C46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6CE221FEDEEFCDDB8D882C1 /* Pods-RideBC.debug.xcconfig */,
+				A96C4D760E35BD90E1047094 /* Pods-RideBC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D0BBD1D8C1828AE934A9976D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6BCDE24065F81EB47125837 /* Pods_RideBC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E7952552208B9E680021A5AA = {
 			isa = PBXGroup;
 			children = (
+				E72ED7EC208FE929002ACE8F /* RICKY.mp4 */,
 				E795255D208B9E680021A5AA /* RideBC */,
 				E795255C208B9E680021A5AA /* Products */,
+				412424EAF86A3AB0F6DE8C46 /* Pods */,
+				D0BBD1D8C1828AE934A9976D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,12 +90,15 @@
 			isa = PBXGroup;
 			children = (
 				E795255E208B9E680021A5AA /* AppDelegate.swift */,
-				E7952560208B9E680021A5AA /* ViewController.swift */,
 				E7952562208B9E680021A5AA /* Main.storyboard */,
-				E7952568208B9E690021A5AA /* Assets.xcassets */,
-				E795256A208B9E690021A5AA /* LaunchScreen.storyboard */,
+				E7952560208B9E680021A5AA /* ViewController.swift */,
+				E7CDB733208E535A00BFC57B /* DestinationInfo.swift */,
+				E7858ACE208C11E600F8A144 /* UberAPIResults.swift */,
+				E7858AD0208C34D100F8A144 /* LyftAPIResults.swift */,
 				E795256D208B9E690021A5AA /* Info.plist */,
 				E7952565208B9E680021A5AA /* RideBC.xcdatamodeld */,
+				E795256A208B9E690021A5AA /* LaunchScreen.storyboard */,
+				E7952568208B9E690021A5AA /* Assets.xcassets */,
 			);
 			path = RideBC;
 			sourceTree = "<group>";
@@ -74,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7952570208B9E690021A5AA /* Build configuration list for PBXNativeTarget "RideBC" */;
 			buildPhases = (
+				4599F729F1C68FA1A37B3B22 /* [CP] Check Pods Manifest.lock */,
 				E7952557208B9E680021A5AA /* Sources */,
 				E7952558208B9E680021A5AA /* Frameworks */,
 				E7952559208B9E680021A5AA /* Resources */,
+				79AE02D0E81E3F841DC09194 /* [CP] Embed Pods Frameworks */,
+				9E4123A7451E55AE0FAFFF63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72ED7ED208FE929002ACE8F /* RICKY.mp4 in Resources */,
 				E795256C208B9E690021A5AA /* LaunchScreen.storyboard in Resources */,
 				E7952569208B9E690021A5AA /* Assets.xcassets in Resources */,
 				E7952564208B9E680021A5AA /* Main.storyboard in Resources */,
@@ -133,12 +173,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4599F729F1C68FA1A37B3B22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RideBC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79AE02D0E81E3F841DC09194 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RideBC/Pods-RideBC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/LyftSDK/LyftSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/UberCore/UberCore.framework",
+				"${BUILT_PRODUCTS_DIR}/UberRides/UberRides.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LyftSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UberCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UberRides.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RideBC/Pods-RideBC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E4123A7451E55AE0FAFFF63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RideBC/Pods-RideBC-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RideBC/Pods-RideBC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E7952557208B9E680021A5AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7CDB734208E535A00BFC57B /* DestinationInfo.swift in Sources */,
+				E7858AD1208C34D100F8A144 /* LyftAPIResults.swift in Sources */,
 				E7952561208B9E680021A5AA /* ViewController.swift in Sources */,
+				E7858ACF208C11E600F8A144 /* UberAPIResults.swift in Sources */,
 				E7952567208B9E680021A5AA /* RideBC.xcdatamodeld in Sources */,
 				E795255F208B9E680021A5AA /* AppDelegate.swift in Sources */,
 			);
@@ -282,11 +394,13 @@
 		};
 		E7952571208B9E690021A5AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6CE221FEDEEFCDDB8D882C1 /* Pods-RideBC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 464K9H2LPP;
 				INFOPLIST_FILE = RideBC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +414,13 @@
 		};
 		E7952572208B9E690021A5AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A96C4D760E35BD90E1047094 /* Pods-RideBC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 464K9H2LPP;
 				INFOPLIST_FILE = RideBC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

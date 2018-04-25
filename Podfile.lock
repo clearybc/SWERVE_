@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (4.7.0)
+  - GoogleMaps (2.6.0):
+    - GoogleMaps/Maps (= 2.6.0)
+  - GoogleMaps/Base (2.6.0)
+  - GoogleMaps/Maps (2.6.0):
+    - GoogleMaps/Base
+  - GooglePlacePicker (2.6.0):
+    - GoogleMaps (= 2.6.0)
+    - GooglePlaces (= 2.6.0)
+  - GooglePlaces (2.6.0):
+    - GoogleMaps/Base (= 2.6.0)
+  - LyftSDK (1.0.6):
+    - LyftSDK/Core (= 1.0.6)
+  - LyftSDK/Core (1.0.6)
+  - SwiftyJSON (4.0.0)
+  - UberCore (0.9.0)
+  - UberRides (0.9.0):
+    - UberCore
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - GoogleMaps
+  - GooglePlacePicker
+  - GooglePlaces
+  - LyftSDK
+  - SwiftyJSON
+  - UberRides (~> 0.9)
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  GoogleMaps: 42f91c68b7fa2f84d5c86597b18ceb99f5414c7f
+  GooglePlacePicker: e4488625effb006f59de49e14b7a603e463e4261
+  GooglePlaces: f6ddf33b75cef69e888907d9947c57198ed845f3
+  LyftSDK: 17eb5abdb12f72203b68a1eac982823bfadda743
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  UberCore: c734f82e2152dcae52beaefc3bdf7e40186af821
+  UberRides: 90b7d6f60d01f3afa6e797f58f3ccbde824f90bf
+
+PODFILE CHECKSUM: dbbd5bdb7dab25030452d8d02e2ecd01cce77aae
+
+COCOAPODS: 1.4.0
