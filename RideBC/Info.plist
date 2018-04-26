@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Swerve</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -18,8 +20,17 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>uber</string>
+		<string>uberauth</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>RideBC must access your location to call you a ride </string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>RideBC must access your location to call you a ride </string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -41,20 +52,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>RideBC must access your location to call you a ride </string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>RideBC must access your location to call you a ride </string>
-    <key>UberClientID</key>
-    <string>7bvwa1OLRndxpWYdqrtxGJ_5nvLctYGL</string>
-    <key>UberServerToken</key>
-    <string>OJIQQfoxM5LhYgS6qeWxHowU49kRHnGzueZeNuLe</string>
-    <key>UberDisplayName</key>
-    <string>RideBC</string>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>uber</string>
-        <string>uberauth</string>
-    </array>
+	<key>UberClientID</key>
+	<string>7bvwa1OLRndxpWYdqrtxGJ_5nvLctYGL</string>
+	<key>UberDisplayName</key>
+	<string>RideBC</string>
+	<key>UberServerToken</key>
+	<string>OJIQQfoxM5LhYgS6qeWxHowU49kRHnGzueZeNuLe</string>
 </dict>
 </plist>

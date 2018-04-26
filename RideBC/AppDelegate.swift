@@ -3,6 +3,7 @@ import CoreLocation
 import LyftSDK
 import UberCore
 import GooglePlaces
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

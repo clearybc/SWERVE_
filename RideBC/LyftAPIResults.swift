@@ -34,7 +34,7 @@ class Lyft {
                 let LyftCostEstimate = json["cost_estimates"][2]["estimated_cost_cents_min"].double
                 let lyftRideType = json["cost_estimates"][2]["ride_type"].stringValue
                 self.newResults = LyftRideDetail(type: lyftRideType, price: LyftCostEstimate!, time: 0)
-            case .failure(let error):
+            case .failure( _):
                 print("there was an error in getting lyft time info")
             }
             completed()
@@ -52,7 +52,7 @@ class Lyft {
                 if lyftETAEstimate != nil {
                     self.newResults.time = lyftETAEstimate!}
                 print(" :) LYFT API RESULTS \(self.newResults.type), $\((self.newResults.price)/100), \((self.newResults.time)/60)min")
-            case .failure(let error):
+            case .failure( _):
                 print("there was an error with getting lyft price info")
             }
             completed()

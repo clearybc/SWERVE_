@@ -17,7 +17,6 @@
 		E7952567208B9E680021A5AA /* RideBC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7952565208B9E680021A5AA /* RideBC.xcdatamodeld */; };
 		E7952569208B9E690021A5AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7952568208B9E690021A5AA /* Assets.xcassets */; };
 		E795256C208B9E690021A5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E795256A208B9E690021A5AA /* LaunchScreen.storyboard */; };
-		E7CDB734208E535A00BFC57B /* DestinationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CDB733208E535A00BFC57B /* DestinationInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +34,6 @@
 		E7952568208B9E690021A5AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E795256B208B9E690021A5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E795256D208B9E690021A5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7CDB733208E535A00BFC57B /* DestinationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +90,6 @@
 				E795255E208B9E680021A5AA /* AppDelegate.swift */,
 				E7952562208B9E680021A5AA /* Main.storyboard */,
 				E7952560208B9E680021A5AA /* ViewController.swift */,
-				E7CDB733208E535A00BFC57B /* DestinationInfo.swift */,
 				E7858ACE208C11E600F8A144 /* UberAPIResults.swift */,
 				E7858AD0208C34D100F8A144 /* LyftAPIResults.swift */,
 				E795256D208B9E690021A5AA /* Info.plist */,
@@ -247,7 +244,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7CDB734208E535A00BFC57B /* DestinationInfo.swift in Sources */,
 				E7858AD1208C34D100F8A144 /* LyftAPIResults.swift in Sources */,
 				E7952561208B9E680021A5AA /* ViewController.swift in Sources */,
 				E7858ACF208C11E600F8A144 /* UberAPIResults.swift in Sources */,
