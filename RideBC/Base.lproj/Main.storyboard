@@ -91,6 +91,15 @@
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwj-la-nrH">
+                                <rect key="frame" x="151" y="469" width="139" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ButtonImage"/>
+                                <connections>
+                                    <action selector="LyftButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kbl-l6-jTe"/>
+                                    <action selector="UberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SNW-a5-wcO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.018586145713925362" green="0.25148314237594604" blue="0.25236380100250244" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -144,4 +153,7 @@
             <point key="canvasLocation" x="37.600000000000001" y="31.934032983508249"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ButtonImage" width="298" height="88"/>
+    </resources>
 </document>

@@ -17,30 +17,25 @@ class ViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var btnLyft: LyftButton!
     @IBOutlet weak var directionsView: MKMapView!
     @IBOutlet weak var btnUber: UIButton!
-    
     @IBOutlet weak var UberTextBox: UITextView!
     @IBOutlet weak var LyfttextBox: UITextView!
-    
     @IBOutlet weak var UberTimeTextBox: UITextView!
     @IBOutlet weak var LyftTimeTextBox: UITextView!
-    
-    
     @IBOutlet weak var DestinationLabel: UILabel!
     @IBOutlet weak var toolbar: UIToolbar!
     
+    //shows pin on map
     var annotation = MKPointAnnotation()
-    
     
     //set up location manager
     var locationManager = CLLocationManager()
     var currentLocation: CLLocation!
     
-    //defaults
     //actual values set in the CLLocationManagerDelegate
     var currentLatitude: CLLocationDegrees =  42.340715
     var currentLongitude: CLLocationDegrees = -71.155412
     
-    //preset destination is MAs
+    //default destination is MAs
     var destinationName = "MAs"
     var destinationLatitude = 42.3359
     var destinationLongitude = -71.1493
@@ -53,16 +48,24 @@ class ViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //play into video
          loadVideo()
         
-        //sets up observer for video ending
+        //sets up observer for video ending so that takeaction() will occur after video stops
          NotificationCenter.default.addObserver(self, selector: #selector(ViewController.takeAction), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
 }
     
+    //the part of viewdidload that happens after the vide plays
   @objc func takeAction(){
     
-    
 directions()
+    
+    //location permissions and loading
+    self.locationManager.delegate = self
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+    self.locationManager.requestWhenInUseAuthorization()
+    self.locationManager.startUpdatingLocation()
+    
 
         //this should animate the textboxes to appear, but they load when API loads for now
         UIView.animate(withDuration: 0.25) {
@@ -83,112 +86,50 @@ directions()
     
         //format Uber button to curve corners 
         btnUber.layer.cornerRadius = 6
-        
-        //location permissions and loading
-        self.locationManager.delegate = self
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        self.locationManager.requestWhenInUseAuthorization()
-        self.locationManager.startUpdatingLocation()
+    
         
         //show default MAs textboxes when loaded
         self.updateText()
-        self.uberButtonChange()
-        self.lyftButtonChange()
-
-//        //properly formatted destination and location for Uber
-//        let uberPickup = CLLocation(latitude: self.currentLatitude, longitude: self.currentLongitude)
-//        let uberDestination = CLLocation(latitude: self.self.destinationLatitude, longitude: self.destinationLongitude)
-//
-//    // communicate an Uber dropoffLocation for Uber and build it into a button
-//    //prodctID refelects UberX in MA
-//
-//        let builder = RideParametersBuilder()
-//        builder.pickupLocation = uberPickup
-//        builder.dropoffLocation = uberDestination
-//        builder.dropoffNickname = "\(self.destinationName)"
-//        builder.dropoffAddress = "\(self.destinationAddress)"
-//        builder.productID = "55c66225-fbe7-4fd5-9072-eab1ece5e23e"
-//        let rideParameters = builder.build()
-//        let button = RideRequestButton(rideParameters: rideParameters)
-//
-//        //put the Uber button in the view
-//        self.view.addSubview(button)
-//        button.center = self.view.center
-    
-        //adjust location coordinates
-        // Lyft button detail adjustments
-        
-//        let lyftPickup = CLLocationCoordinate2D(latitude: self.currentLatitude, longitude: self.currentLongitude)
-//        let lyftDestination = CLLocationCoordinate2D(latitude: self.destinationLatitude, longitude: self.destinationLongitude)
-//
-//        //LYFT DESTINATION NOT HAPPENING IN LYFT
-//        self.btnLyft.configure(rideKind: LyftSDK.RideKind.Standard, pickup: lyftPickup, destination: lyftDestination)
-
+        //provide recent info to lyft button
+//        self.lyftButtonChange()
     }
     
-    func uberButtonChange(){
-        //properly formatted destination and location for Uber
-//        let uberPickup = CLLocation(latitude: self.currentLatitude, longitude: self.currentLongitude)
-//        let uberDestination = CLLocation(latitude: self.self.destinationLatitude, longitude: self.destinationLongitude)
-//
-//        // communicate an Uber dropoffLocation for Uber and build it into a button
-//        //prodctID refelects UberX in MA
-//
-//        let builder = RideParametersBuilder()
-//
-//
-//        builder.pickupLocation = uberPickup
-//        builder.dropoffLocation = uberDestination
-//        builder.dropoffNickname = "\(self.destinationName)"
-//        builder.dropoffAddress = "\(self.destinationAddress)"
-//        builder.productID = "55c66225-fbe7-4fd5-9072-eab1ece5e23e"
-//
-//        let rideParameters = builder.build()
-////        let button = RideRequestButton(rideParameters: rideParameters)
-//
-//        let deeplink = RequestDeeplink(rideParameters: rideParameters)
-    }
- 
-    @IBAction func UberButtonPressed(_ sender: UIButton) {
+
+        //when uber button is pressed, send user to uber deeplink
+        @IBAction func UberButtonPressed(_ sender: UIButton) {
         let uberPickup = CLLocation(latitude: self.currentLatitude, longitude: self.currentLongitude)
         let uberDestination = CLLocation(latitude: self.self.destinationLatitude, longitude: self.destinationLongitude)
         
-        // communicate an Uber dropoffLocation for Uber and build it into a button
-        //prodctID refelects UberX in MA
-        
+        //build a ride from current info
         let builder = RideParametersBuilder()
-        
-        
         builder.pickupLocation = uberPickup
         builder.dropoffLocation = uberDestination
         builder.dropoffNickname = "\(self.destinationName)"
         builder.dropoffAddress = "\(self.destinationAddress)"
         builder.productID = "55c66225-fbe7-4fd5-9072-eab1ece5e23e"
-        
         let rideParameters = builder.build()
-        //        let button = RideRequestButton(rideParameters: rideParameters)
-        
         let deeplink = RequestDeeplink(rideParameters: rideParameters)
         deeplink.execute()
     }
     
+    
+    @IBAction func LyftButtonPressed(_ sender: UIButton) {
         
-//        //put the Uber button in the view
-//        self.view.addSubview(button)
-////        button.center = self.view.center
-//        button.frame = CGRect(x: 20 , y: 545, width: 157, height: 48)
-//    }
+        let lyftPickup = CLLocationCoordinate2D(latitude: self.currentLatitude, longitude: self.currentLongitude)
+        let lyftDestination = CLLocationCoordinate2D(latitude: self.destinationLatitude, longitude: self.destinationLongitude)
+         LyftDeepLink.requestRide(kind: .Standard, from: lyftPickup, to: lyftDestination)
+    }
     
-    
-    
-    func lyftButtonChange (){
-    let lyftPickup = CLLocationCoordinate2D(latitude: self.currentLatitude, longitude: self.currentLongitude)
-    let lyftDestination = CLLocationCoordinate2D(latitude: self.destinationLatitude, longitude: self.destinationLongitude)
+//    //change the lyft button to refelect most recent user selection
+//    func lyftButtonChange (){
+//    let lyftPickup = CLLocationCoordinate2D(latitude: self.currentLatitude, longitude: self.currentLongitude)
+//    let lyftDestination = CLLocationCoordinate2D(latitude: self.destinationLatitude, longitude: self.destinationLongitude)
     
     //LYFT DESTINATION NOT HAPPENING IN LYFT
-    self.btnLyft.configure(rideKind: LyftSDK.RideKind.Standard, pickup: lyftPickup, destination: lyftDestination)
-    
-    }
+        
+        
+    //    self.btnLyft.configure(rideKind: LyftSDK.RideKind.Standard, pickup: lyftPickup, destination: lyftDestination) }
+//
     
     func directions() {
         //load the map
@@ -331,8 +272,7 @@ extension ViewController: GMSAutocompleteViewControllerDelegate {
         updateText()
         self.directionsView.removeOverlays(self.directionsView.overlays)
         directions()
-        self.uberButtonChange()
-        self.lyftButtonChange()
+//        self.lyftButtonChange()
         
         dismiss(animated: true, completion: nil)
     }
