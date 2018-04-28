@@ -17,26 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="$00.00" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elS-cw-6CP">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="$00.00" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elS-cw-6CP">
                                 <rect key="frame" x="20" y="422" width="150" height="63"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="jZo-pS-ykW"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="40"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="0 min" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tla-G9-GJJ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="0 min" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tla-G9-GJJ">
                                 <rect key="frame" x="20" y="482" width="150" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="wBk-bC-z14"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uy9-dR-v0q">
-                                <rect key="frame" x="20" y="532" width="150" height="49"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uy9-dR-v0q">
+                                <rect key="frame" x="20" y="532" width="150" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
                                 <state key="normal" title="UBER Get a ride">
@@ -64,15 +61,13 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="$00.00" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxu-Ui-oYk">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="$00.00" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxu-Ui-oYk">
                                 <rect key="frame" x="195" y="422" width="150" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="40"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="78F-Gt-pO9" customClass="LyftButton" customModule="LyftSDK">
-                                <rect key="frame" x="195" y="532" width="150" height="50"/>
-                            </view>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jW4-Nj-Bsi">
                                 <rect key="frame" x="0.0" y="99" width="375" height="315"/>
                                 <constraints>
@@ -85,14 +80,15 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="0 min" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeZ-iL-pvQ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="0 min" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeZ-iL-pvQ">
                                 <rect key="frame" x="195" y="482" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwj-la-nrH">
-                                <rect key="frame" x="151" y="469" width="139" height="43"/>
+                                <rect key="frame" x="203" y="532" width="150" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="ButtonImage"/>
                                 <connections>
@@ -101,38 +97,16 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.018586145713925362" green="0.25148314237594604" blue="0.25236380100250244" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.01175322663038969" green="0.4243328869342804" blue="0.4257429838180542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Zxu-Ui-oYk" firstAttribute="leading" secondItem="elS-cw-6CP" secondAttribute="trailing" constant="25" id="3EN-p4-XIq"/>
-                            <constraint firstItem="uy9-dR-v0q" firstAttribute="top" secondItem="elS-cw-6CP" secondAttribute="bottom" constant="47" id="4pX-TW-beR"/>
-                            <constraint firstItem="elS-cw-6CP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5pV-oU-B1a"/>
                             <constraint firstItem="R1f-lD-lZY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6sA-qb-8P4"/>
                             <constraint firstItem="jW4-Nj-Bsi" firstAttribute="top" secondItem="pu5-0n-XIl" secondAttribute="bottom" constant="25" id="9TO-Ky-az9"/>
                             <constraint firstItem="R1f-lD-lZY" firstAttribute="leading" secondItem="jW4-Nj-Bsi" secondAttribute="leading" id="9mU-Xk-ktL"/>
                             <constraint firstItem="pu5-0n-XIl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="BwC-g6-Yxe"/>
-                            <constraint firstItem="uy9-dR-v0q" firstAttribute="centerY" secondItem="78F-Gt-pO9" secondAttribute="centerY" id="Etk-vd-18S"/>
-                            <constraint firstItem="uy9-dR-v0q" firstAttribute="top" secondItem="tla-G9-GJJ" secondAttribute="bottom" constant="20" id="GfM-3F-YYm"/>
-                            <constraint firstItem="tla-G9-GJJ" firstAttribute="trailing" secondItem="uy9-dR-v0q" secondAttribute="trailing" id="JKa-Ca-2pz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zxu-Ui-oYk" secondAttribute="trailing" constant="30" id="JR9-Ev-63O"/>
                             <constraint firstItem="jW4-Nj-Bsi" firstAttribute="centerX" secondItem="pu5-0n-XIl" secondAttribute="centerX" id="MHE-Rl-wNV"/>
-                            <constraint firstItem="Zxu-Ui-oYk" firstAttribute="trailing" secondItem="WeZ-iL-pvQ" secondAttribute="trailing" id="Ofu-MC-URh"/>
                             <constraint firstAttribute="trailing" secondItem="jW4-Nj-Bsi" secondAttribute="trailing" id="QBX-4T-NCL"/>
-                            <constraint firstItem="tla-G9-GJJ" firstAttribute="bottom" secondItem="WeZ-iL-pvQ" secondAttribute="bottom" id="TJQ-bf-pmt"/>
-                            <constraint firstItem="elS-cw-6CP" firstAttribute="top" secondItem="jW4-Nj-Bsi" secondAttribute="bottom" constant="8" symbolic="YES" id="WaD-jA-5AW"/>
-                            <constraint firstItem="uy9-dR-v0q" firstAttribute="top" secondItem="78F-Gt-pO9" secondAttribute="top" id="ZWK-dY-fOc"/>
-                            <constraint firstItem="elS-cw-6CP" firstAttribute="trailing" secondItem="tla-G9-GJJ" secondAttribute="trailing" id="bxT-dz-dMX"/>
-                            <constraint firstItem="R1f-lD-lZY" firstAttribute="top" secondItem="78F-Gt-pO9" secondAttribute="bottom" constant="41" id="gJ2-RC-7rB"/>
                             <constraint firstItem="R1f-lD-lZY" firstAttribute="trailing" secondItem="jW4-Nj-Bsi" secondAttribute="trailing" id="hQB-jC-VYO"/>
-                            <constraint firstItem="tla-G9-GJJ" firstAttribute="top" secondItem="jW4-Nj-Bsi" secondAttribute="bottom" constant="68" id="hXD-zA-dqE"/>
-                            <constraint firstItem="elS-cw-6CP" firstAttribute="leading" secondItem="tla-G9-GJJ" secondAttribute="leading" id="hZu-Xq-LCD"/>
-                            <constraint firstItem="WeZ-iL-pvQ" firstAttribute="trailing" secondItem="78F-Gt-pO9" secondAttribute="trailing" id="lIz-My-dXv"/>
-                            <constraint firstItem="elS-cw-6CP" firstAttribute="top" secondItem="Zxu-Ui-oYk" secondAttribute="top" id="on8-Mb-kuK"/>
-                            <constraint firstItem="tla-G9-GJJ" firstAttribute="top" secondItem="WeZ-iL-pvQ" secondAttribute="top" id="ops-W2-q7n"/>
-                            <constraint firstItem="tla-G9-GJJ" firstAttribute="leading" secondItem="uy9-dR-v0q" secondAttribute="leading" id="pd2-IC-8MJ"/>
                             <constraint firstItem="jW4-Nj-Bsi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="psi-gg-iIB"/>
-                            <constraint firstItem="elS-cw-6CP" firstAttribute="bottom" secondItem="Zxu-Ui-oYk" secondAttribute="bottom" id="u1k-9I-Bds"/>
-                            <constraint firstItem="Zxu-Ui-oYk" firstAttribute="leading" secondItem="WeZ-iL-pvQ" secondAttribute="leading" id="xL0-mH-EQn"/>
-                            <constraint firstItem="WeZ-iL-pvQ" firstAttribute="leading" secondItem="78F-Gt-pO9" secondAttribute="leading" id="xsc-AA-RVj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -142,7 +116,7 @@
                         <outlet property="LyfttextBox" destination="Zxu-Ui-oYk" id="xMT-Hh-NoS"/>
                         <outlet property="UberTextBox" destination="elS-cw-6CP" id="6vI-AV-bTF"/>
                         <outlet property="UberTimeTextBox" destination="tla-G9-GJJ" id="bJZ-BF-xaK"/>
-                        <outlet property="btnLyft" destination="78F-Gt-pO9" id="7QY-hw-urf"/>
+                        <outlet property="btnLyftt" destination="Cwj-la-nrH" id="bfw-HR-laq"/>
                         <outlet property="btnUber" destination="uy9-dR-v0q" id="QOC-Lb-sn1"/>
                         <outlet property="directionsView" destination="jW4-Nj-Bsi" id="vsF-pf-hYh"/>
                         <outlet property="toolbar" destination="R1f-lD-lZY" id="tip-Qj-nIW"/>

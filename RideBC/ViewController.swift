@@ -17,6 +17,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var btnLyft: LyftButton!
     @IBOutlet weak var directionsView: MKMapView!
     @IBOutlet weak var btnUber: UIButton!
+    @IBOutlet weak var btnLyftt: UIButton!
+    
     @IBOutlet weak var UberTextBox: UITextView!
     @IBOutlet weak var LyfttextBox: UITextView!
     @IBOutlet weak var UberTimeTextBox: UITextView!
@@ -69,7 +71,7 @@ directions()
 
         //this should animate the textboxes to appear, but they load when API loads for now
         UIView.animate(withDuration: 0.25) {
-            self.btnLyft.alpha = 1
+            self.btnLyftt.alpha = 1
             self.UberTextBox.alpha = 1
             self.LyfttextBox.alpha = 1
             self.directionsView.alpha = 1
@@ -81,8 +83,8 @@ directions()
         }
     
         //format lyft button so there is no white space on the corners
-        btnLyft.layer.cornerRadius = 6;
-        btnLyft.layer.masksToBounds = true;
+        btnLyftt.layer.cornerRadius = 6;
+        btnLyftt.layer.masksToBounds = true;
     
         //format Uber button to curve corners 
         btnUber.layer.cornerRadius = 6
@@ -120,16 +122,7 @@ directions()
          LyftDeepLink.requestRide(kind: .Standard, from: lyftPickup, to: lyftDestination)
     }
     
-//    //change the lyft button to refelect most recent user selection
-//    func lyftButtonChange (){
-//    let lyftPickup = CLLocationCoordinate2D(latitude: self.currentLatitude, longitude: self.currentLongitude)
-//    let lyftDestination = CLLocationCoordinate2D(latitude: self.destinationLatitude, longitude: self.destinationLongitude)
-    
-    //LYFT DESTINATION NOT HAPPENING IN LYFT
-        
-        
-    //    self.btnLyft.configure(rideKind: LyftSDK.RideKind.Standard, pickup: lyftPickup, destination: lyftDestination) }
-//
+
     
     func directions() {
         //load the map
@@ -192,7 +185,7 @@ directions()
     //MARK: LOADVIDEO, runs in viewdidload
     func loadVideo() {
         
-        btnLyft.alpha = 0
+        btnLyftt.alpha = 0
         UberTextBox.alpha = 0
         LyfttextBox.alpha = 0
         directionsView.alpha = 0
