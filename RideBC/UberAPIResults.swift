@@ -37,6 +37,7 @@ let headers = [ "Authorization" : "Token OJIQQfoxM5LhYgS6qeWxHowU49kRHnGzueZeNuL
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
+                print("###GET INFO 1 \(json)")
                 let uberTimeEstimate = json["times"][1]["estimate"].double
                 self.newResults.time = uberTimeEstimate!
                 print(" 1 UBER API RESULTS \(self.newResults.type), $\(self.newResults.price), \(self.newResults.time)min, \(self.newResults.product_id)")
@@ -54,7 +55,7 @@ let headers = [ "Authorization" : "Token OJIQQfoxM5LhYgS6qeWxHowU49kRHnGzueZeNuL
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                print(json)
+                print("###GET INFO 2 \(json)")
                 let uberPriceEstimate = json["prices"][0]["estimate"].stringValue
                 self.newResults.price = uberPriceEstimate
                 let uberType = json["prices"][0]["localized_display_name"].stringValue
@@ -72,6 +73,7 @@ let headers = [ "Authorization" : "Token OJIQQfoxM5LhYgS6qeWxHowU49kRHnGzueZeNuL
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
+                print("###GET INFO 3 \(json)")
                 let uberProductID = json["products"][1]["product_id"].stringValue
                 self.newResults.product_id = uberProductID
                   print(" 3 UBER API RESULTS \(self.newResults.type), $\(self.newResults.price), \(self.newResults.time)min, \(self.newResults.product_id)")

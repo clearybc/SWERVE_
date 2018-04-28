@@ -31,8 +31,9 @@ class Lyft {
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                let LyftCostEstimate = json["cost_estimates"][2]["estimated_cost_cents_min"].double
-                let lyftRideType = json["cost_estimates"][2]["ride_type"].stringValue
+                print("###GET lyftpriceinfo \(json)")
+                let LyftCostEstimate = json["cost_estimates"][1]["estimated_cost_cents_min"].double
+                let lyftRideType = json["cost_estimates"][1]["ride_type"].stringValue
                 self.newResults = LyftRideDetail(type: lyftRideType, price: LyftCostEstimate!, time: 0)
             case .failure( _):
                 print("there was an error in getting lyft time info")
@@ -46,8 +47,7 @@ class Lyft {
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                print(json)
-                
+                print("###GET lyft eta INFO \(json)")
                 let lyftETAEstimate = json["eta_estimates"][1]["eta_seconds"].double
                 if lyftETAEstimate != nil {
                     self.newResults.time = lyftETAEstimate!}

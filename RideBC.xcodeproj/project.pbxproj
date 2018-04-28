@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		387FFAFB4D0DF9A01EF83020 /* Pods_RideBC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BCDE24065F81EB47125837 /* Pods_RideBC.framework */; };
-		E72ED7ED208FE929002ACE8F /* RICKY.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E72ED7EC208FE929002ACE8F /* RICKY.mp4 */; };
 		E7858ACF208C11E600F8A144 /* UberAPIResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7858ACE208C11E600F8A144 /* UberAPIResults.swift */; };
 		E7858AD1208C34D100F8A144 /* LyftAPIResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7858AD0208C34D100F8A144 /* LyftAPIResults.swift */; };
 		E795255F208B9E680021A5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E795255E208B9E680021A5AA /* AppDelegate.swift */; };
@@ -17,13 +16,13 @@
 		E7952567208B9E680021A5AA /* RideBC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7952565208B9E680021A5AA /* RideBC.xcdatamodeld */; };
 		E7952569208B9E690021A5AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7952568208B9E690021A5AA /* Assets.xcassets */; };
 		E795256C208B9E690021A5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E795256A208B9E690021A5AA /* LaunchScreen.storyboard */; };
+		E7E8261E2093B2DC00F5D38D /* RICKY.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E7E8261D2093B2DC00F5D38D /* RICKY.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A96C4D760E35BD90E1047094 /* Pods-RideBC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideBC.release.xcconfig"; path = "Pods/Target Support Files/Pods-RideBC/Pods-RideBC.release.xcconfig"; sourceTree = "<group>"; };
 		B6BCDE24065F81EB47125837 /* Pods_RideBC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RideBC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CE221FEDEEFCDDB8D882C1 /* Pods-RideBC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideBC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RideBC/Pods-RideBC.debug.xcconfig"; sourceTree = "<group>"; };
-		E72ED7EC208FE929002ACE8F /* RICKY.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RICKY.mp4; sourceTree = "<group>"; };
 		E7858ACE208C11E600F8A144 /* UberAPIResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberAPIResults.swift; sourceTree = "<group>"; };
 		E7858AD0208C34D100F8A144 /* LyftAPIResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyftAPIResults.swift; sourceTree = "<group>"; };
 		E795255B208B9E680021A5AA /* RideBC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideBC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +33,7 @@
 		E7952568208B9E690021A5AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E795256B208B9E690021A5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E795256D208B9E690021A5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7E8261D2093B2DC00F5D38D /* RICKY.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RICKY.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 		E7952552208B9E680021A5AA = {
 			isa = PBXGroup;
 			children = (
-				E72ED7EC208FE929002ACE8F /* RICKY.mp4 */,
+				E7E8261D2093B2DC00F5D38D /* RICKY.mp4 */,
 				E795255D208B9E680021A5AA /* RideBC */,
 				E795255C208B9E680021A5AA /* Products */,
 				412424EAF86A3AB0F6DE8C46 /* Pods */,
@@ -161,7 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E72ED7ED208FE929002ACE8F /* RICKY.mp4 in Resources */,
+				E7E8261E2093B2DC00F5D38D /* RICKY.mp4 in Resources */,
 				E795256C208B9E690021A5AA /* LaunchScreen.storyboard in Resources */,
 				E7952569208B9E690021A5AA /* Assets.xcassets in Resources */,
 				E7952564208B9E680021A5AA /* Main.storyboard in Resources */,
@@ -196,6 +196,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RideBC/Pods-RideBC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/LyftSDK/LyftSDK.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -204,6 +205,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LyftSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
