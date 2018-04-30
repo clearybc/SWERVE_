@@ -34,8 +34,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
     var currentLocation: CLLocation!
     
     //actual values set in the CLLocationManagerDelegate
-    var currentLatitude: CLLocationDegrees =  42.340715
-    var currentLongitude: CLLocationDegrees = -71.155412
+    var currentLatitude: CLLocationDegrees =  42.3355
+    var currentLongitude: CLLocationDegrees = -71.1685
     
     //default destination is MAs
     var destinationName = "MAs"
@@ -62,6 +62,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     //the part of viewdidload that happens after the vide plays
   @objc func takeAction(){
     
+ self.directionsView.removeOverlays(self.directionsView.overlays)
 directions()
     
     //location permissions and loading
@@ -94,8 +95,7 @@ directions()
         
         //show default MAs textboxes when loaded
         self.updateText()
-        //provide recent info to lyft button
-//        self.lyftButtonChange()
+    
     }
     
 
@@ -342,8 +342,7 @@ extension ViewController: CLLocationManagerDelegate {
         //make my location 2d for mkcoordinateregion
         let currentLocation2D = CLLocationCoordinate2D(latitude: currentLatitude, longitude: currentLongitude)
         
-        self.directionsView.removeOverlays(self.directionsView.overlays)
-        takeAction()
+
         
 
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
