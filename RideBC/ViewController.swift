@@ -46,6 +46,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
     //creates variables for Uber and Lyft API info
     var uberResults = Uber()
     var lyftResults = Lyft()
+    //trying
+    var userSpecific = NewUserUber()
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -170,6 +172,7 @@ directions()
     //if user refreshes, update everything again 
     @IBAction func refreshButtonPressed(_ sender: UIBarButtonItem) {
         takeAction()
+        self.directionsView.removeOverlays(self.directionsView.overlays)
     }
     
 
@@ -236,6 +239,10 @@ directions()
         self.uberResults.getUberInfo(latitude: currentLatitude, longitude: currentLongitude, destinationLatitude: destinationLatitude, destinationLongitude: destinationLongitude){
             self.UberTextBox.text = "\(self.uberResults.newResults.price)"
             self.UberTimeTextBox.text = "\(Int((self.uberResults.newResults.time)/60.0)) min "
+        }
+        
+        self.userSpecific.UserSpecificInfo(latitude: currentLatitude, longitude: currentLongitude, destinationLatitude: destinationLatitude, destinationLongitude: destinationLongitude) {
+            print("user specific is running")
         }
     }
     

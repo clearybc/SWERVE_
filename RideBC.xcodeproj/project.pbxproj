@@ -10,6 +10,7 @@
 		387FFAFB4D0DF9A01EF83020 /* Pods_RideBC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BCDE24065F81EB47125837 /* Pods_RideBC.framework */; };
 		E7858ACF208C11E600F8A144 /* UberAPIResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7858ACE208C11E600F8A144 /* UberAPIResults.swift */; };
 		E7858AD1208C34D100F8A144 /* LyftAPIResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7858AD0208C34D100F8A144 /* LyftAPIResults.swift */; };
+		E787364920941C3D00C00514 /* UberUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787364820941C3D00C00514 /* UberUser.swift */; };
 		E795255F208B9E680021A5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E795255E208B9E680021A5AA /* AppDelegate.swift */; };
 		E7952561208B9E680021A5AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7952560208B9E680021A5AA /* ViewController.swift */; };
 		E7952564208B9E680021A5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7952562208B9E680021A5AA /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		B6CE221FEDEEFCDDB8D882C1 /* Pods-RideBC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideBC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RideBC/Pods-RideBC.debug.xcconfig"; sourceTree = "<group>"; };
 		E7858ACE208C11E600F8A144 /* UberAPIResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberAPIResults.swift; sourceTree = "<group>"; };
 		E7858AD0208C34D100F8A144 /* LyftAPIResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyftAPIResults.swift; sourceTree = "<group>"; };
+		E787364820941C3D00C00514 /* UberUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberUser.swift; sourceTree = "<group>"; };
 		E795255B208B9E680021A5AA /* RideBC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideBC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E795255E208B9E680021A5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7952560208B9E680021A5AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				E7952562208B9E680021A5AA /* Main.storyboard */,
 				E7952560208B9E680021A5AA /* ViewController.swift */,
 				E7858ACE208C11E600F8A144 /* UberAPIResults.swift */,
+				E787364820941C3D00C00514 /* UberUser.swift */,
 				E7858AD0208C34D100F8A144 /* LyftAPIResults.swift */,
 				E795256D208B9E690021A5AA /* Info.plist */,
 				E7952565208B9E680021A5AA /* RideBC.xcdatamodeld */,
@@ -248,6 +251,7 @@
 			files = (
 				E7858AD1208C34D100F8A144 /* LyftAPIResults.swift in Sources */,
 				E7952561208B9E680021A5AA /* ViewController.swift in Sources */,
+				E787364920941C3D00C00514 /* UberUser.swift in Sources */,
 				E7858ACF208C11E600F8A144 /* UberAPIResults.swift in Sources */,
 				E7952567208B9E680021A5AA /* RideBC.xcdatamodeld in Sources */,
 				E795255F208B9E680021A5AA /* AppDelegate.swift in Sources */,
