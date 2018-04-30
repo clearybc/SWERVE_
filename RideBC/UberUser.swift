@@ -5,6 +5,10 @@ import UberRides
 import SwiftyJSON
 import Alamofire
 
+
+//unused class for future user-specific deveopment
+//will allow for user-specific ride info 
+
 class NewUserUber {
     struct UserUberRideDetail {
         var type: String

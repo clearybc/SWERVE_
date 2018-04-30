@@ -241,9 +241,6 @@ directions()
             self.UberTimeTextBox.text = "\(Int((self.uberResults.newResults.time)/60.0)) min "
         }
         
-        self.userSpecific.UserSpecificInfo(latitude: currentLatitude, longitude: currentLongitude, destinationLatitude: destinationLatitude, destinationLongitude: destinationLongitude) {
-            print("user specific is running")
-        }
     }
     
     
@@ -341,9 +338,13 @@ extension ViewController: CLLocationManagerDelegate {
         currentLatitude = currentLocation.coordinate.latitude
         currentLongitude = currentLocation.coordinate.longitude
         
+        
         //make my location 2d for mkcoordinateregion
         let currentLocation2D = CLLocationCoordinate2D(latitude: currentLatitude, longitude: currentLongitude)
-
+        
+        self.directionsView.removeOverlays(self.directionsView.overlays)
+        takeAction()
+        
 
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let polylineRenderer = MKPolylineRenderer(overlay: overlay)
